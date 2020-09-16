@@ -4,10 +4,13 @@ public class Combustible extends Vehiculo implements Impuesto{
     private int litrosGasolina;
     private double cilindra;
 
-    public void setCilindra(int precioCilindra, int diametro, int radio){
+    public Combustible(String placa, String marca, String modelo, String color){
+        super(placa, marca, modelo, color);
+    }
+    public void setCilindra(int precioCilindra, int radio){
         //la cilindra dependerá del diametro y el radio, y será definida con su precio
         int carrera = radio * 2;
-        double cilindra = 3.1416 * ((diametro^2)/4)*carrera;
+        double cilindra = 3.1416 * (((radio*2)^2)/4)*carrera;
         this.cilindra = cilindra * precioCilindra;
     }
 

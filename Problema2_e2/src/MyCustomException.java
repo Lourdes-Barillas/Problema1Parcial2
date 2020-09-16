@@ -1,10 +1,11 @@
 public class MyCustomException extends Exception{
     private Errores error;
 
-    public void validarCarnet(int codeSede, int codeAlumno){
-        //contar los dígitos del código de sede
-        if((Integer.toString(codeSede)).length()>4){
-            
-        }
+
+
+    MyCustomException(String mensaje, Errores e){
+        super(mensaje + ". Error de tipo " + e.toString());
     }
+
+    public MyCustomException(){}
 }

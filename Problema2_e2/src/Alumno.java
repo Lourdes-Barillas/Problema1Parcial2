@@ -2,7 +2,14 @@ public class Alumno {
     private String carne;
 
     public Alumno(int codeSede, int codeAlumno){
-        this.carne = codeSede(codeSede) + "-" + codeAlumno(codeAlumno);
+        try {
+            validarCarnetSede(codeSede);
+            validarCarnetAlumno(codeAlumno);
+            this.carne = codeSede(codeSede) + "-" + codeAlumno(codeAlumno);
+        } catch (MyCustomException e) {
+            e.printStackTrace();
+        }
+
     }
     public Alumno(){}
 

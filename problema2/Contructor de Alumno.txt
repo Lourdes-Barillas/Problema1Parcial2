@@ -1,0 +1,3 @@
+public Alumno(int codeSede, int codeAlumno){
+        this.carne = codeSede(codeSede) + "-" + codeAlumno(codeAlumno);
+}

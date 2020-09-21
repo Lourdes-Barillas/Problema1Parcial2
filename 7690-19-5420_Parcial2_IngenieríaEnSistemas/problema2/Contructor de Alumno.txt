@@ -1,0 +1,10 @@
+public Alumno(int codeSede, int codeAlumno){
+        try {
+            validarCarnetSede(codeSede);
+            validarCarnetAlumno(codeAlumno);
+            this.carne = codeSede(codeSede) + "-" + codeAlumno(codeAlumno);
+        } catch (MyCustomException e) {
+            e.printStackTrace();
+        }
+
+    }

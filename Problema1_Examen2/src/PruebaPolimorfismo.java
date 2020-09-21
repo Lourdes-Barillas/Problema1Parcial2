@@ -7,6 +7,8 @@ public class PruebaPolimorfismo {
     }
 
     public static void main(String[] args) {
+        sumar();
+        System.out.println("");
 
         Combustible auto1c = new Combustible("", "", "", "");
         Combustible auto2c = new Combustible("", "", "", "");

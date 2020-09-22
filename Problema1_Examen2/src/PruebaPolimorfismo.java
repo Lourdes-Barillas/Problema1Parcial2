@@ -5,6 +5,7 @@ public class PruebaPolimorfismo {
     public static void sumar(){
         int suma = 5 + 6;
     }
+	public static void Dividir(){double division= 5/2;}
 
     public static void main(String[] args) {
         sumar();

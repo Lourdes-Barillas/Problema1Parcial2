@@ -8,6 +8,7 @@ public class PruebaPolimorfismo {
     public static void multiplcar(){
         int m = 5 * 6;
         System.out.print(m);
+        System.out.println("hola mundo")
     }
 
     public static void main(String[] args) {

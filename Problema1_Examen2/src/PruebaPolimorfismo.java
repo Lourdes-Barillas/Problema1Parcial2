@@ -5,9 +5,14 @@ public class PruebaPolimorfismo {
     public static void sumar(){
         int suma = 5 + 6;
     }
+    public static void multiplcar(){
+        int m = 5 * 6;
+        System.out.print(m);
+    }
 
     public static void main(String[] args) {
         sumar();
+        multiplcar();
         System.out.println("");
 
         Combustible auto1c = new Combustible("", "", "", "");
